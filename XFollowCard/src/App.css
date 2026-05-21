@@ -1,0 +1,85 @@
+.tw-card {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.tw-card-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tw-card-header img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.tw-card-header-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tw-card-header-content-name {
+    opacity: 0.7;
+}
+
+.tw-card-header-content-username {
+    color: #6b6b70;
+}
+
+.tw-card-header-aside-button {
+    margin-left: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 6px 1rem;
+    font-weight: bold;
+    border: 1px solid #000;
+
+}
+
+.tw-card-header-aside-button:hover {
+   opacity: 0.8;
+}
+
+
+.tw-card-header-aside-button-following {
+    border-radius: 50px;
+    padding: 6px 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #bbb;
+    margin-left: 1rem;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+    width: 120px;
+
+}
+
+.tw-followCard-text {
+    display: block;
+}
+
+.tw-card-header-aside-button-following:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    width: auto;
+    
+}
+
+.tw-card-header-aside-button-following:hover .tw-followCard-text {
+    display: none;
+}
+
+.tw-card-header-aside-button-following:hover .tw-followCard-stop-following {
+    display: block;
+}
+
+.tw-followCard-stop-following {
+    display: none;
+}
+
