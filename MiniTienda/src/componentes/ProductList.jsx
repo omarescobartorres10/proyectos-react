@@ -1,14 +1,15 @@
 import ProductCard from "./ProductCard";
 
-function ProductList() {
+function ProductList({productos, agregarAlCarrito}) {
   return (
     <div className="product-list-container">
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
-      <ProductCard />
+      {productos.map((producto) => (
+        <ProductCard 
+          key={producto.id} 
+          producto={producto} 
+          agregarAlCarrito={agregarAlCarrito} 
+        />
+      ))}
     </div>
   );
 }
